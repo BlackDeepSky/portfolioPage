@@ -1,0 +1,44 @@
+.mainWrapper {
+    height: 100vh;
+    background-color: #9995AE;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.mainContactPage{
+    width: 70vw;
+    height: auto;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 1fr;
+    border: 3px solid black;
+    align-items: center;
+    justify-items: center;
+}
+.contactText {
+    align-self: flex-start;
+    background-color: green;
+    font-size: 25px;
+}
+.mainContactText{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    align-self: center;
+    justify-self: center;
+    border: 3px solid black;
+    margin: 50px 250px;
+    text-align: center;
+}
+.mainContactText p{
+    background-color: whitesmoke;
+}
+.contactButton button{
+    width: 150px;
+    height: 50px;
+}
+.contactButton{
+    align-self: flex-end;
+}

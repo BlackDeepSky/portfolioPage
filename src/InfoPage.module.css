@@ -1,0 +1,32 @@
+.mainWrapper {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-self: center;
+    justify-self: center;
+    background-color: #DDFFE9;
+}
+.InfoPage{
+    display: grid;
+    height: auto;
+    width: 70vw;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    border: 3px solid black;
+    align-self: center;
+    justify-self: center;
+    margin: 100px 200px;
+    text-align: center;
+    grid-row-gap: 50px;
+}
+.infoPageText{
+font-size: 25px;
+    font-weight: bold;
+}
+.infoPageButton button{
+width: 200px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 17px;
+}
