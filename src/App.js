@@ -7,6 +7,7 @@ import ContactPage from "./ContactPage";
 import FooterPage from "./FooterPage";
 function App() {
   return (
+
     <div className="App">
 <HeaderPage/>
 <MainPage/>
