@@ -3,8 +3,8 @@
     height: 100%;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    align-self: center;
-    justify-self: center;
+    align-items: center;
+    justify-items: center;
     background-color: #DDFFE9;
 }
 .mainPage {
@@ -17,6 +17,7 @@
             "works works"
             "content content";
     margin: 100px 200px;
+    width: 70vw;
 }
 .mySkills {
     text-align: center;
@@ -56,8 +57,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
     background-color: grey;
 }
