@@ -1,26 +1,22 @@
 import React from 'react';
+import HeaderButton from "./HeaderButton";
 import styles from './HeaderPage.module.css';
 
-class HeaderPage extends React.Component{
+class HeaderPage extends React.Component {
     render = () => {
         return (
             <div className={styles.mainWrapper}>
-                <div className={styles.mainHeader}>
-                    <ul>
-                        <li>Главная | Main</li>
-                        <li>Скилы | Skills</li>
-                        <li>Работы | Works</li>
-                        <li>Контакты | Contacts</li>
-                    </ul>
-                </div>
+
+                <HeaderButton headerButton={this.props.headerButton}/>
 
                 <div className={styles.mainContent}>
 
                     <div className={styles.profileName}>
-                        <p>Привет!<br></br>Меня зовут <span>Александр Калелов!</span><br></br>Я <span>Front-End</span> разработчик</p>
+                        <p>Привет!<br></br>Меня
+                            зовут <span>{this.props.name}</span><br></br>Я <span>Front-End</span> разработчик</p>
                     </div>
                     <div className={styles.profileImg}>
-                    <img  src="5-124.muj-avatar.png"/>
+                        <img src="5-124.muj-avatar.png"/>
                     </div>
                 </div>
 
