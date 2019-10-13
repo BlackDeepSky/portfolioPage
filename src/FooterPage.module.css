@@ -1,11 +1,13 @@
 .mainWrapper {
     height: 100%;
-    background-color: forestgreen;
+    background-color: #252527;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
+    color: whitesmoke;
+    font-family: "Lucida Sans";
 }
 .mainFooterPage{
     width: 70vw;

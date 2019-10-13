@@ -1,6 +1,6 @@
 .mainWrapper {
     height: 100vh;
-    background-color: #9995AE;
+    background-color: #1F1F20;
     display: grid;
     grid-template-rows: 50px 1fr;
     grid-template-columns: auto;
@@ -11,7 +11,9 @@
 .mainHeader{
     grid-area: header;
     text-align: center;
-    background-color: gold;
+    color: whitesmoke;
+    font-family: "Lucida Sans";
+    font-size: 20px;
 }
 .mainHeader ul>li{
     display: inline;
@@ -25,11 +27,10 @@
 }
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .mainContent{
-    width: 70vw;
+    width: 90vw;
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border:  5px solid red;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,16 +38,43 @@
 
 }
 .profileName {
-text-align: center;
-    font-size: 25px;
+    text-align: center;
+    font-size: 50px;
     align-self: center;
+    color: #FFFFFF;
+    font-family: "Lucida Sans";
 }
 .profileName span{
-    border-bottom: 5px solid whitesmoke;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+}
+.profileName span:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    z-index: -1;
+    background: aqua;
 }
 .profileImg {
-margin: 0 auto;
+    margin: 0 auto;
 }
-.profileImg img{
+
+.avatarImg {
     height: 50vh;
+    border: 5px solid black;
+}
+.profileImg span{
+    position: absolute;
+    top: -15px;
+    bottom: 0;
+    height: 103%;
+    width: 20%;
+    z-index: -1;
+    border: 5px solid lightseagreen;
+    right: 190px;
 }

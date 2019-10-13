@@ -5,7 +5,9 @@
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
-    background-color: #DDFFE9;
+    background-color: #252527;
+    color: whitesmoke;
+    font-family: "Lucida Sans";
 }
 .mainPage {
     display: grid;

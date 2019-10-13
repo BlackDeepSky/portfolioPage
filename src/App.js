@@ -15,7 +15,7 @@ class App extends React.Component {
         "Работы | Works",
         "Контакты | Contacts"
     ],
-     name: "Александр Калелов"
+     name: "Alexander Kalelov"
     };
 nameRename = (attr) => {
    let nameBest = [...this.state.name, ` \{${attr}\}`];

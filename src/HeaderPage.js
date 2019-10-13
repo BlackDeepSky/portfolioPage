@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderButton from "./HeaderButton";
 import styles from './HeaderPage.module.css';
+import avatarImg from './img/avatar.jpg';
 
 class HeaderPage extends React.Component {
     render = () => {
@@ -12,11 +13,11 @@ class HeaderPage extends React.Component {
                 <div className={styles.mainContent}>
 
                     <div className={styles.profileName}>
-                        <p>Привет!<br></br>Меня
-                            зовут <span>{this.props.name}</span><br></br>Я <span>Front-End</span> разработчик</p>
+                        <p>Hi!<br></br>I am  <span>{this.props.name}</span><br></br>I <span>Front-End</span> developer</p>
                     </div>
                     <div className={styles.profileImg}>
-                        <img src="5-124.muj-avatar.png"/>
+                        <img src={avatarImg} className={styles.avatarImg}/>
+                        <span></span>
                     </div>
                 </div>
 

@@ -1,11 +1,12 @@
 .mainWrapper {
     height: 100vh;
-    background-color: #9995AE;
+    background-color: #1F1F20;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
+    font-family: "Lucida Sans";
 }
 .mainContactPage{
     width: 70vw;

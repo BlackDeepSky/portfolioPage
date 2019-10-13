@@ -1,11 +1,12 @@
 .mainWrapper {
     height: 100vh;
-    background-color: lightgreen;
+    background-color: #1F1F20;
     display: grid;
     align-items: center;
     justify-items: center;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+    font-family: "Lucida Sans";
 }
 .mainContainer{
     width: 70vw;
@@ -29,6 +30,7 @@ text-align: center;
     line-height: 100px;
     font-size: 30px;
     border: 3px solid grey;
+    color: whitesmoke;
 }
 .myWorksFrame{
     grid-area: frame;
