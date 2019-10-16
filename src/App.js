@@ -10,10 +10,10 @@ import FooterPage from "./FooterPage";
 class App extends React.Component {
  state = {
     headerButton:[
-        "Главная | Main",
-        "Скилы | Skills",
-        "Работы | Works",
-        "Контакты | Contacts"
+        "Main",
+        "Skills",
+        "Works",
+        "Contacts"
     ],
      name: "Alexander Kalelov"
     };

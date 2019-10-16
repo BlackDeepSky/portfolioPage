@@ -38,3 +38,22 @@ border: 1px solid black;
 .footerIcons span:nth-child(2n){
     background-color: yellow;
 }
+@media screen and (max-width: 600px){
+    .mainFooterPage{
+        width: 90vw;
+        height: auto;
+        margin: 20px 20px;
+        display: grid;
+        grid-template-rows: 50px 1fr 50px;
+        grid-template-columns: 1fr;
+        border: 3px solid black;
+        align-items: center;
+        justify-items: center;
+    }
+    .footerIcons {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(5,1fr);
+        margin: 20px 20px;
+    }
+}

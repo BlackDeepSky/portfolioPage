@@ -77,3 +77,38 @@
 .mainContent div {
     border: 3px solid black;
 }
+@media screen and (max-width: 600px){
+    .mainWrapper {
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        background-color: #252527;
+        color: whitesmoke;
+        font-family: "Lucida Sans";
+    }
+    .mainPage {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 150px 1fr;
+        justify-items: center;
+        border: 5px solid red;
+        grid-template-areas:
+                "works works works"
+                "content content content";
+        width: 90vw;
+        margin: 0;
+    }
+    .mainContent {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px 150px;
+        grid-column-gap: 0px;
+        grid-area: content;
+        grid-template-areas:
+                "first two four"
+                "first three five";
+    }
+}

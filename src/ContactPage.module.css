@@ -43,3 +43,31 @@
 .contactButton{
     align-self: flex-end;
 }
+@media screen and (max-width: 600px) {
+    .mainContactPage{
+        width: 90vw;
+        height: auto;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        border: none;
+        align-items: center;
+        justify-items: center;
+    }
+    .contactText {
+        align-self: center;
+        background-color: green;
+        font-size: 25px;
+    }
+    .mainContactText{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        align-self: center;
+        justify-self: center;
+        border: 3px solid black;
+        margin: 80px 0;
+        text-align: center;
+    }
+}

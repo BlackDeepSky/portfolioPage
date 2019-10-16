@@ -1,5 +1,6 @@
 .mainWrapper {
     height: 100vh;
+    width: 100%;
     background-color: #1F1F20;
     display: grid;
     grid-template-rows: 50px 1fr;
@@ -20,11 +21,9 @@
     margin: 10px;
     border: 2px solid black;
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
 }
-.mainHeader ul {
-    margin: 15px;
-}
+
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .mainContent{
     width: 90vw;
@@ -35,7 +34,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 .profileName {
     text-align: center;
@@ -77,4 +75,62 @@
     z-index: -1;
     border: 5px solid lightseagreen;
     right: 190px;
+}
+
+@media screen and (max-width: 600px) {
+    .mainWrapper {
+        height: 100vh;
+        width: 100%;
+        background-color: #1F1F20;
+        display: grid;
+        grid-template-rows: 200px 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+                "header"
+                "main"
+    }
+    .mainHeader{
+        grid-area: header;
+        text-align: center;
+        color: whitesmoke;
+        font-family: "Lucida Sans";
+        font-size: 20px;
+    }
+    .mainHeader ul {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .mainHeader ul>li{
+        font-size: 6vw;
+        margin: 10px;
+        padding: 5px;
+    }
+    .mainContent{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        width: 90vw;
+        grid-area: main;
+        justify-items: center;
+        align-items: center;
+    }
+    .profileImg span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 80%;
+        width: 100%;
+        z-index: -1;
+        border: 5px solid lightseagreen;
+    }
+    .avatarImg {
+        display: none;
+        height: 50vh;
+        border: 5px solid black;
+    }
 }

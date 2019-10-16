@@ -32,3 +32,18 @@ width: 200px;
     text-decoration: none;
     font-size: 17px;
 }
+@media screen and (max-width: 600px) {
+    .InfoPage{
+             display: grid;
+             height: auto;
+             width: 70vw;
+             grid-template-rows: 1fr 1fr;
+             grid-template-columns: 1fr;
+             border: 3px solid black;
+             align-self: center;
+             justify-self: center;
+             margin: 50px;
+             text-align: center;
+             grid-row-gap: 50px;
+         }
+}
