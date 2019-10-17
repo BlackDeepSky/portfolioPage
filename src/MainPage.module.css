@@ -53,6 +53,7 @@
 .myProject4 p {
     text-align: center;
     font-size: 35px;
+    padding: 10px;
 }
 .myProject4 div{
     background-image: url("https://miro.medium.com/max/512/1*jA5lTgPRbyimsFNod7SlFQ.png");
@@ -68,6 +69,7 @@
     grid-area: five;
     text-align: center;
     font-size: 25px;
+    padding: 10px;
 }
 .mainContent img{
     width: 100%;
@@ -103,12 +105,23 @@
     }
     .mainContent {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 300px 150px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
         grid-column-gap: 0px;
         grid-area: content;
         grid-template-areas:
-                "first two four"
-                "first three five";
+                "four"
+                "five";
+    }
+    .myProject1, .myProject2, .myProject3{
+        display: none;
+    }
+    .myProject4 {
+        grid-area: four;
+    }
+    .myProject4 p {
+        text-align: center;
+        font-size: 25px;
+        padding: 10px;
     }
 }

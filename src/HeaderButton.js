@@ -3,14 +3,12 @@ import styles from './HeaderPage.module.css';
 
 class HeaderButton extends React.Component{
     render = () => {
+        let headerButtons = this.props.headerButton.map(b => <li>{b}</li>);
         return (
 
                 <div className={styles.mainHeader}>
                     <ul>
-                        <li>{this.props.headerButton[0]}</li>
-                        <li>{this.props.headerButton[1]}</li>
-                        <li>{this.props.headerButton[2]}</li>
-                        <li>{this.props.headerButton[3]}</li>
+                        {headerButtons}
                     </ul>
                 </div>
 

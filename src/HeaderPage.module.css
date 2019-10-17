@@ -12,16 +12,19 @@
 .mainHeader{
     grid-area: header;
     text-align: center;
+    justify-self: center;
     color: whitesmoke;
     font-family: "Lucida Sans";
-    font-size: 20px;
+    font-size: 25px;
 }
 .mainHeader ul>li{
     display: inline;
     margin: 10px;
-    border: 2px solid black;
     border-radius: 15px;
     padding: 10px;
+}
+.mainHeader ul{
+    border: 2px solid black;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -29,7 +32,7 @@
     width: 90vw;
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 50vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,18 +63,22 @@
 }
 .profileImg {
     margin: 0 auto;
+    position: relative;
+    height: 400px;
 }
 
 .avatarImg {
-    height: 50vh;
+    height: inherit;
+    width: auto;
     border: 5px solid black;
 }
 .profileImg span{
     position: absolute;
-    top: -15px;
+    left: 10px;
+    top: 15px;
     bottom: 0;
-    height: 103%;
-    width: 20%;
+    height: inherit;
+    width: 100%;
     z-index: -1;
     border: 5px solid lightseagreen;
     right: 190px;
@@ -83,13 +90,14 @@
         width: 100%;
         background-color: #1F1F20;
         display: grid;
-        grid-template-rows: 200px 1fr;
+        grid-template-rows: auto 1fr;
         grid-template-columns: 1fr;
         grid-template-areas:
                 "header"
                 "main"
     }
     .mainHeader{
+        width: 100vw;
         grid-area: header;
         text-align: center;
         color: whitesmoke;
@@ -98,39 +106,84 @@
     }
     .mainHeader ul {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
+        grid-template-rows: 1fr;
+        grid-template-columns: auto;
+        justify-self: center;
+        align-self: center;
         padding: 0;
+        margin: 10px;
+        grid-auto-flow: column;
     }
     .mainHeader ul>li{
-        font-size: 6vw;
+        font-size: 20px;
         margin: 10px;
-        padding: 5px;
+        padding: 0;
     }
     .mainContent{
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
         position: relative;
         width: 90vw;
         grid-area: main;
         justify-items: center;
         align-items: center;
     }
+    .profileName {
+        text-align: center;
+        font-size: 30px;
+        align-self: center;
+        color: #FFFFFF;
+        font-family: "Lucida Sans";
+    }
+    .profileName span{
+        font-size: 30px;
+    }
+    .profileName span:after{
+        height: 13px;
+        width: auto;
+    }
+    .profileImg {
+        margin: 0 auto;
+        position: relative;
+        height: 300px;
+    }
     .profileImg span{
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 80%;
+        left: 0;
+        height: inherit;
         width: 100%;
+        background-color: aqua;
         z-index: -1;
-        border: 5px solid lightseagreen;
+        opacity: 0.7;
+        transform: rotate(9deg);
+        border: none;
+    }
+    .profileImg span:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: red;
+        z-index: 1;
+        opacity: 0.7;
+        transform: rotate(7deg);
+    }
+    .profileImg span:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: green;
+        z-index: 2;
+        opacity: 0.7;
+        transform: rotate(12deg);
     }
     .avatarImg {
-        display: none;
-        height: 50vh;
+        width: auto;
+        height: 300px;
         border: 5px solid black;
     }
 }

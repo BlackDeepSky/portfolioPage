@@ -33,16 +33,27 @@ width: 200px;
     font-size: 17px;
 }
 @media screen and (max-width: 600px) {
+    .mainWrapper {
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        align-self: center;
+        justify-self: center;
+        background-color: #252527;
+        color: whitesmoke;
+        font-family: "Lucida Sans";
+    }
     .InfoPage{
              display: grid;
              height: auto;
-             width: 70vw;
+             width: 90vw;
              grid-template-rows: 1fr 1fr;
              grid-template-columns: 1fr;
              border: 3px solid black;
              align-self: center;
              justify-self: center;
-             margin: 50px;
+             margin: 0;
              text-align: center;
              grid-row-gap: 50px;
          }

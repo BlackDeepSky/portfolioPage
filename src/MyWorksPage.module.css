@@ -112,8 +112,8 @@ text-align: center;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 0px;
         grid-template-areas:
-                "frame slide"
-                "underframe underslide";
+                "slide slide"
+                "underslide underslide";
     }
     .myWorks {
         text-align: center;
