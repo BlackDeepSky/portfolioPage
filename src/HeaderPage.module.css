@@ -97,7 +97,6 @@
                 "main"
     }
     .mainHeader{
-        width: 100vw;
         grid-area: header;
         text-align: center;
         color: whitesmoke;
@@ -134,7 +133,8 @@
         font-size: 30px;
         align-self: center;
         color: #FFFFFF;
-        font-family: "Lucida Sans";
+        font-family: 'EB Garamond', serif;
+        font-weight: bold;
     }
     .profileName span{
         font-size: 30px;
