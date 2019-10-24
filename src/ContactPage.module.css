@@ -30,7 +30,6 @@
     align-self: center;
     justify-self: center;
     border: 3px solid black;
-    margin: 50px 250px;
     text-align: center;
 }
 .mainContactText p{
@@ -41,14 +40,17 @@
     height: 50px;
 }
 .contactButton{
-    align-self: flex-end;
+    align-self: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    .mainWrapper {
+        height: auto;
+    }
     .mainContactPage{
-        width: 90vw;
+        width: 80vw;
         height: auto;
         display: grid;
-        grid-template-rows: auto;
+        grid-template-rows: 100px 1fr 100px;
         grid-template-columns: 1fr;
         border: none;
         align-items: center;
@@ -67,7 +69,7 @@
         align-self: center;
         justify-self: center;
         border: 3px solid black;
-        margin: 80px 0;
+        margin: 50px 0;
         text-align: center;
     }
 }

@@ -3,7 +3,7 @@
     width: 100%;
     background-color: #1F1F20;
     display: grid;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-columns: auto;
     grid-template-areas:
             "header header"
@@ -25,18 +25,15 @@
 }
 .mainHeader ul{
     border: 2px solid black;
+    padding: 10px;
 }
 
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .mainContent{
-    width: 90vw;
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 50vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    align-items: center;
+    justify-items: center;
 }
 .profileName {
     text-align: center;
@@ -44,11 +41,13 @@
     align-self: center;
     color: #FFFFFF;
     font-family: "Lucida Sans";
+    padding: 50px;
 }
 .profileName span{
     font-size: 50px;
     position: relative;
     display: inline-block;
+    z-index: 0;
 }
 .profileName span:after{
     content: "";
@@ -62,9 +61,9 @@
     background: aqua;
 }
 .profileImg {
-    margin: 0 auto;
     position: relative;
     height: 400px;
+    z-index: 0;
 }
 
 .avatarImg {
@@ -84,7 +83,44 @@
     right: 190px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+    .mainWrapper {
+        height: auto;
+        width: 100%;
+    }
+
+    .profileImg {
+        position: relative;
+        height: 300px;
+        margin-bottom: 90px;
+    }
+}
+@media screen and (max-width: 800px){
+    .mainContent{
+        align-items: start;
+        grid-template-rows: auto 1fr;
+    }
+    .profileImg {
+        position: relative;
+        height: 300px;
+    }
+    .profileName {
+        font-size: 30px;
+        padding: 0;
+    }
+    .profileName span{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 540px){
+    .mainHeader ul>li{
+        font-size: 16px;
+        margin: 10px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
     .mainWrapper {
         height: 100vh;
         width: 100%;
@@ -114,7 +150,7 @@
         grid-auto-flow: column;
     }
     .mainHeader ul>li{
-        font-size: 20px;
+        font-size: 16px;
         margin: 10px;
         padding: 0;
     }
@@ -123,7 +159,6 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
         position: relative;
-        width: 90vw;
         grid-area: main;
         justify-items: center;
         align-items: center;
@@ -134,17 +169,15 @@
         align-self: center;
         color: #FFFFFF;
         font-family: 'EB Garamond', serif;
-        font-weight: bold;
     }
     .profileName span{
         font-size: 30px;
     }
     .profileName span:after{
-        height: 13px;
+        height: 11px;
         width: auto;
     }
     .profileImg {
-        margin: 0 auto;
         position: relative;
         height: 300px;
     }
@@ -168,7 +201,7 @@
         background-color: red;
         z-index: 1;
         opacity: 0.7;
-        transform: rotate(7deg);
+        transform: rotate(-14deg);
     }
     .profileImg span:before{
         content: "";
@@ -179,7 +212,7 @@
         background-color: green;
         z-index: 2;
         opacity: 0.7;
-        transform: rotate(12deg);
+        transform: rotate(-3deg);
     }
     .avatarImg {
         width: auto;
