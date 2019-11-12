@@ -69,7 +69,10 @@
 .avatarImg {
     height: inherit;
     width: auto;
-    border: 5px solid black;
+    box-shadow: 0 1px 4px rgba(21, 238, 142, 0.6),
+                -23px 0 20px -23px rgba(33, 200, 184, 0.8),
+                23px 0 20px -23px rgba(50, 201, 98, 0.8),
+                0 0 40px rgba(255, 0, 0, 0.5) inset;
 }
 .profileImg span{
     position: absolute;
@@ -217,6 +220,5 @@
     .avatarImg {
         width: auto;
         height: 300px;
-        border: 5px solid black;
     }
 }
