@@ -1,37 +1,7 @@
-button {
-    text-decoration: none;
-    outline: none;
-    display: inline-block;
-    margin: 10px 20px;
-    padding: 10px 30px;
-    position: relative;
-    border: 2px solid aquamarine;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    transition: .4s;
-    background-color: transparent;
-}
-button:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    border: 2px solid rgba(0,0,0,0);
-    transition: .4s;
-}
-button:hover:after {
-    border-color: aquamarine;
-    width: calc(100% - 10px);
-    height: calc(100% + 10px);
-}
+
 .mainWrapper {
     height: auto;
-    background-color: #1F1F20;
+    background-color: black;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -64,39 +34,33 @@ button:hover:after {
     grid-template-rows: auto 1fr;
 }
 .myWorksSlide{
-
     position: relative;
+    filter: blur(5px);
 }
 .myWorksSlideClick{
-    top: 50%;
+    top: 35%;
     width: 150px;
     height: 60px;
-    left: calc(50% - 75px);
+    left: calc(50% - 95px);
     font-size: 18px;
     background-color: black;
     opacity: 0.5;
+    position: absolute;
 }
 
 .myWorksSlide img{
-    filter: blur(5px);
     width: 100%;
-    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     box-shadow: 0 1px 4px rgba(21, 238, 142, 0.6),
-                -23px 0 20px -23px rgba(33, 200, 184, 0.8),
-                23px 0 20px -23px rgba(50, 201, 98, 0.8),
-                0 0 40px rgba(255, 0, 0, 0.5) inset;
+    -23px 0 20px -23px rgba(33, 200, 184, 0.8),
+    23px 0 20px -23px rgba(50, 201, 98, 0.8),
+    0 0 40px rgba(255, 0, 0, 0.5) inset;
 }
 
-.myWorksSlide img:hover{
+.myWorksSlide:hover{
     filter: none;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 .myWorksUnderSlide{
     text-align: center;

@@ -1,6 +1,6 @@
 .mainWrapper {
     height: 100vh;
-    background-color: #1F1F20;
+    background-color: black;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -31,13 +31,19 @@
     justify-self: center;
     border: 3px solid black;
     text-align: center;
+    width: 80%;
 }
-.mainContactText p{
+.mainContactText input, textarea{
     background-color: whitesmoke;
-}
-.contactButton button{
-    width: 150px;
+    width: 80%;
     height: 50px;
+    margin: 15px;
+    justify-self: center;
+    font-size: 20px;
+    text-align: center;
+}
+.mainContactText textarea{
+    height: auto;
 }
 .contactButton{
     align-self: center;

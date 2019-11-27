@@ -6,10 +6,9 @@ import avatarImg from './img/avatar.jpg';
 class HeaderPage extends React.Component {
     render = () => {
         return (
-            <div className={styles.mainWrapper}>
+            <div className={styles.mainWrapper} id='headerPage'>
 
-                <HeaderButton headerButton={this.props.headerButton}/>
-
+                <HeaderButton/>
                 <div className={styles.mainContent}>
 
                     <div className={styles.profileName}>

@@ -1,6 +1,6 @@
 .mainWrapper {
     height: 100%;
-    background-color: #252527;
+    background-color: black;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;

@@ -12,13 +12,7 @@ import particle from './particle';
 
 class App extends React.Component {
  state = {
-    headerButton:[
-        "Main",
-        "Skills",
-        "Works",
-        "Contacts"
-    ],
-     name: "Alexander Kalelov"
+     name: "Alexander Kalelov",
     };
 nameRename = (attr) => {
    let nameBest = [...this.state.name, ` \{${attr}\}`];
@@ -29,9 +23,9 @@ nameRename = (attr) => {
 
     render = () => {
         return (
-            <div className="App">
+            <div>
+                <HeaderPage name={this.state.name}/>
                 <Particles className={'particles'} params={particle}/>
-                <HeaderPage headerButton={this.state.headerButton} name={this.state.name}/>
                 <MainPage/>
                 <MyWorksPage/>
                 <InfoPage nameRename={this.nameRename}/>

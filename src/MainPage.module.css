@@ -5,7 +5,7 @@
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
-    background-color: #252527;
+    background-color: black;
     color: whitesmoke;
     font-family: "Lucida Sans";
 }
@@ -54,13 +54,13 @@
     position: absolute;
     height: 100px;
     width: 100px;
-    left: -20px;
-    top: -15px;
+    left: -23px;
+    top: -23px;
     opacity: 0.5;
-    background-color: yellow;
-    transform: rotate(10deg);
+    border: 3px solid white;
+    border-radius: 50%;
     z-index: -1;
-    box-shadow: 0 1px 4px rgba(21, 238, 142, 0.6), -23px 0 20px -23px rgba(33, 200, 184, 0.8), 23px 0 20px -23px rgba(50, 201, 98, 0.8), 0 0 40px rgba(255, 0, 0, 0.5) inset;
+    box-shadow: 0px 0px 14px 0px rgba(15, 47, 238, 0.6), -23px 0 20px -23px rgba(200, 1, 10, 0.8), -1px 7px 19px 0px rgba(50, 201, 98, 0.8), 0px 0px 10px 1px rgba(253, 255, 72, 0.96) inset;
 }
 .skillsName{
 
@@ -77,7 +77,7 @@
         grid-template-columns: 1fr;
         align-items: center;
         justify-items: center;
-        background-color: #252527;
+        background-color: black;
         color: whitesmoke;
         font-family: "Lucida Sans";
     }

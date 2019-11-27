@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Raleway&display=swap');
+
 .mainWrapper {
     height: 100vh;
     width: 100%;
-    background-color: #1F1F20;
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: auto;
     grid-template-areas:
             "header header"
-            "main main"
+            "main main";
+    z-index: 2;
+    position: relative;
 }
 .mainHeader{
     grid-area: header;
@@ -17,15 +20,21 @@
     font-family: "Lucida Sans";
     font-size: 25px;
 }
-.mainHeader ul>li{
+.mainHeader ul>a>li{
     display: inline;
     margin: 10px;
     border-radius: 15px;
     padding: 10px;
 }
-.mainHeader ul{
-    border: 2px solid black;
-    padding: 10px;
+.mainHeader a {
+    margin: 5px;
+    text-decoration: none;
+    color: #07e8ff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 15px #07e8ff;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
 }
 
 .mainContent{
@@ -127,7 +136,7 @@
     .mainWrapper {
         height: 100vh;
         width: 100%;
-        background-color: #1F1F20;
+        background-color: black;
         display: grid;
         grid-template-rows: auto 1fr;
         grid-template-columns: 1fr;
@@ -144,7 +153,7 @@
     }
     .mainHeader ul {
         display: grid;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-columns: auto;
         justify-self: center;
         align-self: center;

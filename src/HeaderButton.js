@@ -2,16 +2,25 @@ import React from 'react';
 import styles from './HeaderPage.module.css';
 
 class HeaderButton extends React.Component{
-    render = () => {
-        let headerButtons = this.props.headerButton.map(b => <li>{b}</li>);
-        return (
 
+    state = {
+        headerButtons: [
+            "Main",
+            "Skills",
+            "Works",
+            "Contacts"
+        ],
+        links: ['#headerPage', '#mainPage', '#myWorksPage', '#contactPage']
+    };
+
+    render = () => {
+        let headerButtons = this.state.headerButtons.map(b => <a href=''><li>{b}</li></a>);
+        return (
                 <div className={styles.mainHeader}>
                     <ul>
                         {headerButtons}
                     </ul>
                 </div>
-
         )
     }
 }

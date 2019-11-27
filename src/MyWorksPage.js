@@ -4,7 +4,7 @@ import s from './MyWorksPage.module.css';
 class MyWorksPage extends React.Component {
     render = () => {
         return (
-            <div className={s.mainWrapper}>
+            <div className={s.mainWrapper} id='myWorksPage'>
                 <div className={s.mainContainer}>
 
                 <div className={s.myWorks}> Мои работы| My works</div>
@@ -26,8 +26,8 @@ class MyWorksPage extends React.Component {
 
                     <div className={s.project}>
                         <div className={s.myWorksSlide}>
-                            <button className={s.myWorksSlideClick}>Смотреть</button>
-                            <img src="https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fmy-first-react-project-c8b42.firebaseapp.com"/>
+                            <a href="https://my-counter-40b30.firebaseapp.com/"><button className={s.myWorksSlideClick}>Смотреть</button></a>
+                            <img src="https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fmy-counter-40b30.firebaseapp.com%2F"/>
                         </div>
                         <div className={s.myWorksUnderSlide}>
                             <p>Название проекта</p>
@@ -40,8 +40,8 @@ class MyWorksPage extends React.Component {
 
                     <div className={s.project}>
                     <div className={s.myWorksSlide}>
-                        <button className={s.myWorksSlideClick}>Смотреть</button>
-                        <img src="https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fmy-first-react-project-c8b42.firebaseapp.com"/>
+                        <a href='https://my-calculate-626ce.firebaseapp.com/'><button className={s.myWorksSlideClick}>Смотреть</button></a>
+                        <img src="https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fmy-calculate-626ce.firebaseapp.com%2F"/>
                     </div>
                     <div className={s.myWorksUnderSlide}>
                         <p>Название проекта</p>
