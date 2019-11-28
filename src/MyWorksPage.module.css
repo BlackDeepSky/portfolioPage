@@ -39,12 +39,11 @@
 }
 .myWorksSlideClick{
     top: 35%;
-    width: 150px;
+    width: 230px;
     height: 60px;
-    left: calc(50% - 95px);
+    left: calc(50% - 115px);
     font-size: 18px;
-    background-color: black;
-    opacity: 0.5;
+    background-color: #01010173;
     position: absolute;
 }
 

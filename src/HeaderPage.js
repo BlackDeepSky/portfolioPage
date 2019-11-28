@@ -2,6 +2,9 @@ import React from 'react';
 import HeaderButton from "./HeaderButton";
 import styles from './HeaderPage.module.css';
 import avatarImg from './img/avatar.jpg';
+import particle from './particle';
+import Particles from "react-particles-js";
+
 
 class HeaderPage extends React.Component {
     render = () => {
@@ -19,8 +22,7 @@ class HeaderPage extends React.Component {
                         <span></span>
                     </div>
                 </div>
-
-
+                <Particles className={'particles'} params={particle}/>
             </div>
 
         )

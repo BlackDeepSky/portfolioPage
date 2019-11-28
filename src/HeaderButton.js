@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './HeaderPage.module.css';
 
+
 class HeaderButton extends React.Component{
 
     state = {
@@ -14,7 +15,7 @@ class HeaderButton extends React.Component{
     };
 
     render = () => {
-        let headerButtons = this.state.headerButtons.map(b => <a href=''><li>{b}</li></a>);
+        let headerButtons = this.state.headerButtons.map((b, index) => <a href={this.state.links[index]}><li>{b}</li></a>);
         return (
                 <div className={styles.mainHeader}>
                     <ul>

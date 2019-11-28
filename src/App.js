@@ -7,7 +7,7 @@ import InfoPage from "./InfoPage";
 import ContactPage from "./ContactPage";
 import FooterPage from "./FooterPage";
 import Particles from 'react-particles-js';
-import particle from './particle';
+
 
 
 class App extends React.Component {
@@ -25,7 +25,7 @@ nameRename = (attr) => {
         return (
             <div>
                 <HeaderPage name={this.state.name}/>
-                <Particles className={'particles'} params={particle}/>
+
                 <MainPage/>
                 <MyWorksPage/>
                 <InfoPage nameRename={this.nameRename}/>

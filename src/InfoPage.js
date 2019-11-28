@@ -8,7 +8,7 @@ class InfoPage extends React.Component {
                 <div className={s.InfoPage}>
                 <div className={s.infoPageText}>Рассматриваю варианты удалённой работы</div>
                     <div className={s.infoPageButton}><button onClick={()=>{this.props.nameRename("Красавчик!")}}>
-                        <span></span><span></span><span></span><span></span>Нанять меня</button></div>
+                        <span></span><span></span><span></span><span></span>Hire me</button></div>
                 </div>
             </div>
         )

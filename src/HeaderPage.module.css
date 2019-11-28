@@ -19,10 +19,12 @@
     color: whitesmoke;
     font-family: "Lucida Sans";
     font-size: 25px;
+    z-index: 2;
 }
 .mainHeader ul>a>li{
-    display: inline;
+    display: inline-grid;
     margin: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
     border-radius: 15px;
     padding: 10px;
 }
@@ -43,6 +45,7 @@
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
     align-items: center;
     justify-items: center;
+    z-index: 2;
 }
 .profileName {
     text-align: center;
@@ -108,6 +111,12 @@
     }
 }
 @media screen and (max-width: 800px){
+    .mainHeader ul>a>li{
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
     .mainContent{
         align-items: start;
         grid-template-rows: auto 1fr;
@@ -121,13 +130,14 @@
         padding: 0;
     }
     .profileName span{
-        font-size: 30px;
+        font-size: 45px;
     }
+
 }
 @media screen and (max-width: 540px){
-    .mainHeader ul>li{
-        font-size: 16px;
-        margin: 10px;
+    .mainHeader ul>a>li{
+        font-size: 12px;
+        margin: 0;
         padding: 0;
     }
 }
@@ -149,7 +159,7 @@
         text-align: center;
         color: whitesmoke;
         font-family: "Lucida Sans";
-        font-size: 20px;
+        font-size: 15px;
     }
     .mainHeader ul {
         display: grid;
@@ -159,6 +169,8 @@
         align-self: center;
         padding: 0;
         margin: 10px;
+        border: 1px solid #ffffff66;
+        border-radius: 20px;
         grid-auto-flow: column;
     }
     .mainHeader ul>li{
@@ -177,7 +189,7 @@
     }
     .profileName {
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
         align-self: center;
         color: #FFFFFF;
         font-family: 'EB Garamond', serif;
