@@ -13,7 +13,7 @@ class MyWorksPage extends React.Component {
                     <div className={s.project}>
                     <div className={s.myWorksSlide}>
                         <button className={s.myWorksSlideClick}><span></span><span></span><span></span><span></span>Смотреть</button>
-                        <img src="https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fmy-first-react-project-c8b42.firebaseapp.com"/>
+                        <img src='https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?my-first-react-project-c8b42.firebaseapp.com'/>
                     </div>
                     <div className={s.myWorksUnderSlide}>
                         <p>Название проекта</p>
