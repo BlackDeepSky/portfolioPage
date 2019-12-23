@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Raleway&display=swap');
 
+.burgerButton{
+    border: 2px solid white;
+    width: 45px;
+    height: 35px;
+    margin: 10px;
+    display: grid;
+}
+.burgerButton>span{
+    width: 30px;
+    height: 2px;
+    background: white;
+    align-self: center;
+    justify-self: center;
+}
+.mainBurgerMenu{
+    background: white;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
 .mainWrapper {
     height: 100vh;
     width: 100%;
@@ -27,6 +49,9 @@
     grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
     border-radius: 15px;
     padding: 10px;
+}
+.mainHeader a:hover {
+    color: white;
 }
 .mainHeader a {
     margin: 5px;
@@ -160,6 +185,8 @@
         color: whitesmoke;
         font-family: "Lucida Sans";
         font-size: 15px;
+        display: grid;
+        grid-template-columns: 100px 1fr;
     }
     .mainHeader ul {
         display: grid;

@@ -68,7 +68,10 @@
     text-overflow: ellipsis;
 }
 .myWorksUnderSlide p{
-    background-color: #9995AE;
+    border: 2px solid #1fc5a375;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
 }
 
 @media screen and (max-width: 350px){

@@ -7,13 +7,25 @@ import Particles from "react-particles-js";
 
 
 class HeaderPage extends React.Component {
+    state = {
+        display: 'none'
+    };
+    hiddenDisplay = (attr) => {
+        if(this.state.display === 'none'){
+            this.setState({
+                display: ''
+            })
+        }else this.setState({
+            display: 'none'
+        })
+    };
     render = () => {
         return (
             <div className={styles.mainWrapper} id='headerPage'>
 
-                <HeaderButton/>
+                <HeaderButton display={this.hiddenDisplay}/>
                 <div className={styles.mainContent}>
-
+                    <div className={styles.mainBurgerMenu} style={{display: this.state.display}}><HeaderButton display={this.hiddenDisplay}/></div>
                     <div className={styles.profileName}>
                         <p>Hi!<br></br>I am  <span>{this.props.name}</span><br></br>I <span>Front-End</span> developer</p>
                     </div>
