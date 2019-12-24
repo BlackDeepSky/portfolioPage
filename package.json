@@ -1,5 +1,5 @@
 {
-  "homepage": "http://BlackDeepSky.github.io/portfolioPage",
+  "homepage": "https://BlackDeepSky.github.io/portfolioPage",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -8,7 +8,7 @@
     "react-burger-menu": "^2.6.13",
     "react-dom": "^16.9.0",
     "react-particles-js": "latest",
-    "react-scripts": "3.1.1",
+    "react-scripts": "^3.3.0",
     "yarn": "^1.19.1"
   },
   "scripts": {
