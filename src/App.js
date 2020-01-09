@@ -6,8 +6,6 @@ import MyWorksPage from "./MyWorksPage";
 import InfoPage from "./InfoPage";
 import ContactPage from "./ContactPage";
 import FooterPage from "./FooterPage";
-import Particles from 'react-particles-js';
-
 
 
 class App extends React.Component {
@@ -25,7 +23,6 @@ nameRename = (attr) => {
         return (
             <div>
                 <HeaderPage name={this.state.name}/>
-
                 <MainPage/>
                 <MyWorksPage/>
                 <InfoPage nameRename={this.nameRename}/>

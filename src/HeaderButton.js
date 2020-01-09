@@ -19,11 +19,6 @@ class HeaderButton extends React.Component{
         return (
 
                 <div className={styles.mainHeader}>
-                    <div className={styles.burgerButton} onClick={()=> this.props.display()}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </div>
                     <ul>
                         {headerButtons}
                     </ul>
