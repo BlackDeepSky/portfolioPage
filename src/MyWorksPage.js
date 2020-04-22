@@ -13,10 +13,10 @@ class MyWorksPage extends React.Component {
                     <div className={s.project}>
                     <div className={s.myWorksSlide}>
                         <button className={s.myWorksSlideClick}><span></span><span></span><span></span><span></span>Смотреть</button>
-                        <img src='https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?my-first-react-project-c8b42.firebaseapp.com'/>
+                        <img src='https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?blackdeepsky.github.io/portfolioPage/'/>
                     </div>
                     <div className={s.myWorksUnderSlide}>
-                        <p>Название проекта</p>
+                        <p>Страница Портфолио</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Alias beatae, consectetur dolore doloribus expedita fugit mollitia,
                             obcaecati, officia quidem vitae voluptatem voluptatibus.
@@ -30,7 +30,7 @@ class MyWorksPage extends React.Component {
                             <img src="https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fmy-counter-40b30.firebaseapp.com%2F"/>
                         </div>
                         <div className={s.myWorksUnderSlide}>
-                            <p>Название проекта</p>
+                            <p>Проект Счётчик</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Alias beatae, consectetur dolore doloribus expedita fugit mollitia,
                                 obcaecati, officia quidem vitae voluptatem voluptatibus.
@@ -44,7 +44,7 @@ class MyWorksPage extends React.Component {
                         <img src="https://mini.s-shot.ru/1024x768/JPEG/1024/Z100/?https%3A%2F%2Fmy-calculate-626ce.firebaseapp.com%2F"/>
                     </div>
                     <div className={s.myWorksUnderSlide}>
-                        <p>Название проекта</p>
+                        <p>Проект Калькулятор</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Alias beatae, consectetur dolore doloribus expedita fugit mollitia,
                             obcaecati, officia quidem vitae voluptatem voluptatibus.
